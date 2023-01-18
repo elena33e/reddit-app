@@ -1,0 +1,53 @@
+.navLink{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.items-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item-list{
+    list-style: none;
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #3b3486;
+    padding: 1rem;
+    margin-right: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.navItem path{
+    fill: #ffe9b1;
+
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#logo h1{
+    font-size: 3rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffe9b1;
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    z-index: 80;
+    right: 0;
+    top: 0;
+    
+}
+

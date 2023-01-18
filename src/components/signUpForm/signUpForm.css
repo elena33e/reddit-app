@@ -1,0 +1,18 @@
+#agreement-check{
+    display: inline;
+    text-align: left;
+    
+}
+#terms-and-cond{
+    display: inline;
+    vertical-align: center;
+    margin-right: 1rem;
+}
+
+input[type="checkbox"]:checked {
+    background-color: blue;
+    color: white;
+  }
+
+    
+

@@ -1,57 +1,33 @@
 import React from 'react';
 import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import  Home  from './components/Home/Home';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import SignUpForm from './components/signUpForm/signUpForm';
+import SignInForm from './components/signInForm/signInForm';
+import MainPage from './components/mainPage/mainPage';
+import AddPostPage from './views/addPostPage';
+import OtherUserProfile from './views/otherUserProfile/otherUserProfile';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+    <BrowserRouter>
+    
+      <Routes>
+
+      <Route index element={<Home/>}/>       
+      <Route path='/signUpForm' element={<SignUpForm/>}/>
+      <Route path='/signInForm' element={ <SignInForm/>}/>
+      <Route path='/mainPage' element={<MainPage/>}/>
+      <Route path='/addPostPage' element={<AddPostPage/>}/>
+      <Route path='/otherUserProfile' element={<OtherUserProfile/>}/>
+
+      </Routes>
+   
+    </BrowserRouter>
     </div>
+    
   );
 }
 

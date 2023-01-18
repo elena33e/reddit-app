@@ -1,0 +1,28 @@
+.category-item{
+    list-style: none;
+    display: block;
+    padding-bottom: 0.5rem;;
+
+}
+
+#category-container{
+    width: 10%;
+    padding: 1rem 2.5rem 2rem;
+    background-color: #FCFDF2;
+    height:44rem  ;
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-right: solid 1px gray;
+
+}
+
+#categories-box{
+    padding: 0;
+    text-align: left;
+    padding-left: 1rem;
+}
